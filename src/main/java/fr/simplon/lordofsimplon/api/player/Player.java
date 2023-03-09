@@ -22,6 +22,7 @@ public class Player
 
     public Player(IHeroe pHeroe, String pName, int pNbVictories)
     {
+        mHeroe = pHeroe;
         mName = pName;
         mNbVictories = pNbVictories;
         mEnergy = MAX_ENERGY;
@@ -37,10 +38,7 @@ public class Player
         return mName;
     }
 
-    public IHeroe getHeroe()
-    {
-        return mHeroe;
-    }
+    public IHeroe getHeroe() { return mHeroe; }
 
     public int getEnergy()
     {
