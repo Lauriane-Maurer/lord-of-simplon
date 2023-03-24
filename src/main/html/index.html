@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Lord of Simplon</title>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<H1>Lord of Simplon</H1>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lord of Simplon</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Irish+Grover">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<!-- Ligne d'entête -->
-<div class="heroe-header-line">
-    <button id="demarrer" class="button" type="button" onclick="">Démarrer</button>
-</div>
+    <body id="bodyWelcome">
 
-<!-- Ligne de sélection d'un héros : de part et d'autre de la card du héros on doit mettre des cases à cocher -->
-<div class="heroe-selection-line">
+        <h1 class="PageTitle">Lord of Simplon</h1>
 
-    <!-- TODO : Case à cocher -->
-
-    <div class="heroe-card">
-        <div class="heroe-card-img">
-            <img src="img/Paladin.png" alt="Log du paladin">
+        <div class="heroe-header-line">
+            <label class="joueur">Joueur 1</label>
+            <button id="demarrer" type="button" onclick="window.location.href='fight.html'">Démarrer</button>
+            <label class="joueur">Joueur 2</label>
         </div>
-        <div class="heroe-card-text">
-            <h1>Paladin</h1>
-            <p class="heroe-description">Gare à celui qui se trouvera sur le chemin de son épée prodigieuse, le
-                Paladin est un héros qui livre des combats sans merci !
-            </p>
-        </div>
-    </div>
 
-    <!-- TODO : Case à cocher -->
+        <!-- Présentation des avatars et choix des joueurs  -->
+        <div class="heroe-selection-line">
 
-</div>
+            <!-- Selection avatar par le joueur1: un joueur ne peut choisir qu'un seul avatar  -->
+            <div class="boutonjoueur">
+                <input class = "radio-player" type="radio" name= "Joueur1" value="Paladin" checked>
+                <input class = "radio-player" type="radio" name= "Joueur1" value="Shifumy" checked>
+                <input class = "radio-player" type="radio" name= "Joueur1" value="Rashuk" checked>
+            </div>
 
-<!-- Ligne de sélection du héros n°2 -->
-<div class="heroe-selection-line">
-    <!-- TODO -->
-</div>
 
-<!-- Ligne de sélection du héros n°3 -->
-<div class="heroe-selection-line">
-    <!-- TODO -->
-</div>
+            <!-- Présentation des avatars -->
+            <div class="ChoixHero">
 
-</body>
+                <!-- Avatar 1: Paladin -->
+                <div class="heroe-card">
+                    <img src="img/Paladin.png" alt="Log du paladin">
+                    <div class="heroe-card-text">
+                        <h1>Paladin</h1>
+                        <p>Gare à celui qui se trouvera sur le chemin de son épée prodigieuse, le
+                        Paladin est un héros qui livre des combats sans merci !</p>
+                    </div>
+                </div>
+
+                <!-- Avatar 2: Shifumy -->
+                <div class="heroe-card">
+                    <img src="img/Shifumy.png" alt="Log du shifumy">
+                     <div class="heroe-card-text">
+                        <h1>Shifumy</h1>
+                        <p>Son pouvoir régénérant en a usé plus d'un !</p>
+                    </div>
+                </div>
+
+                <!-- Avatar 3: Rashuk -->
+                <div class="heroe-card">
+                    <img  src="img/Rashuk.png" alt="Log du Rashuk">
+                    <div class="heroe-card-text">
+                        <h1>Rashuk</h1>
+                        <p>C’est un personnage dessiné sur un coin de table et c’est de là que lui vient le nom de sa meilleure attaque !</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Selection avatar par le joueur2: un joueur ne peut choisir qu'un seul avatar -->
+           <div class="boutonjoueur">
+               <input class = "radio-player" type="radio" name="Joueur2" checked>
+               <input class = "radio-player" type="radio" name="Joueur2" checked>
+               <input class = "radio-player" type="radio" name="Joueur2" checked>
+           </div>
+
+       </div>
+
+   </body>
+
 </html>

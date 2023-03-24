@@ -8,13 +8,13 @@ import org.junit.jupiter.api.*;
 class PlayerTest {
     private Player test_player;
     @BeforeEach
-       public void testInitialisation() {
+    public void testInitialisation() {
        IHeroe test_heroe = new Heroe("Superwoman", null);
        test_player = new Player (test_heroe, "Lauriane", 0);
-        }
+    }
 
     @Test
-    public void testGetHeroe(){
+    public void testGetHeroe() {
         String expectedName = "Superwoman";
         IHeroe actualHeroe = test_player.getHeroe();
         Assertions.assertEquals(expectedName, actualHeroe.getName(), "Le nom obtenu est différent de celui attendu.");
